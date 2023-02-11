@@ -52,6 +52,14 @@ app.post('/api/logout', (req, res) => {
   })
 })
 
+//添加一个路由测试git合并分支
+app.get('/zzq', (req, res) => {
+  res.send({
+    name: 'zzq',
+    age: 25
+  })
+})
+
 app.listen(80, function () {
   console.log('Express server running at http://127.0.0.1:80')
 })
