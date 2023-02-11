@@ -60,6 +60,16 @@ app.get('/zzq', (req, res) => {
   })
 })
 
+//在主分支上修改
+app.get('/xiugai', (req, res) => {
+  res.send('主分支的修改')
+})
+
+//在logout上的修改
+// app.get('/api666', (req, res) => {
+//   res.send('logout分支上的修改')
+// })
+
 app.listen(80, function () {
   console.log('Express server running at http://127.0.0.1:80')
 })
